@@ -19,16 +19,12 @@ public class Factorizer {
         
         // Factors
         System.out.println("The factors of " + userInput + " are:");
-        for (int i = 1; i <= userInput; i++) {
+        for (int i = 1; i < userInput; i++) {
             if (userInput % i == 0) {
                 factors = Arrays.copyOf(factors, factors.length+1);
                 factors[factors.length - 1] = i;
+                factorsSum += i;
                 System.out.print(i + " ");
-                
-                // Sum factors to check for perfect number
-                if (i != userInput) {
-                    factorsSum += i;
-                }
             }
         }
         System.out.println("\n" + userInput + " has " + factors.length + " factors.");
