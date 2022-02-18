@@ -1,4 +1,4 @@
-package ap.practiceprogramming;
+package ap.factorizer;
 
 import java.util.Scanner;
 import java.util.Arrays;
